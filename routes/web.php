@@ -12,6 +12,8 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ContactformController;
 use App\Http\Controllers\BasicticketController;
 
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,50 +29,52 @@ use App\Http\Controllers\BasicticketController;
 //     return view('welcome');
 // });
 
-Route::get('/', [FrontendController::class, 'index'])->name('index');
-Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
-Route::get('/about', [FrontendController::class, 'about'])->name('about');
-Route::get('/service', [FrontendController::class, 'service'])->name('service');
-Route::get('/portfolio', [FrontendController::class, 'portfolio'])->name('portfolio');
-Route::get('/ticket', [FrontendController::class, 'ticket'])->name('ticket');
-Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
-Route::get('/career', [FrontendController::class, 'career'])->name('career');
-Route::get('/review', [FrontendController::class, 'review'])->name('review');
+// Route::get('/', [FrontendController::class, 'index'])->name('index');
+// Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+// Route::get('/about', [FrontendController::class, 'about'])->name('about');
+// Route::get('/service', [FrontendController::class, 'service'])->name('service');
+// Route::get('/portfolio', [FrontendController::class, 'portfolio'])->name('portfolio');
+// Route::get('/ticket', [FrontendController::class, 'ticket'])->name('ticket');
+// Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
+// Route::get('/career', [FrontendController::class, 'career'])->name('career');
+// Route::get('/review', [FrontendController::class, 'review'])->name('review');
 
-Route::get('/cookie', [FrontendController::class, 'cookie'])->name('cookie');
-
-
-Route::get('/software_development', [FrontendController::class, 'softwareDevelopment'])->name('software_development');
-Route::get('/mobile_app', [FrontendController::class, 'mobileApp'])->name('mobile_app');
-Route::get('/software_service', [FrontendController::class, 'softwareService'])->name('software_service');
-Route::get('/web_design', [FrontendController::class, 'webDesign'])->name('web_design');
-Route::get('/seo', [FrontendController::class, 'seo'])->name('seo');
-Route::get('/marketing', [FrontendController::class, 'marketing'])->name('marketing');
+// Route::get('/cookie', [FrontendController::class, 'cookie'])->name('cookie');
 
 
-Route::get('/aeon', [FrontendController::class, 'aeon'])->name('aeon');
-//Route::get('/projectsingletest', [FrontendController::class, 'projectsingletest_view'])->name('projectsingletest');
-Route::get('/project_single_view/{project}', [FrontendController::class, 'project_single_view'])->name('project_single_view');
+// Route::get('/software_development', [FrontendController::class, 'softwareDevelopment'])->name('software_development');
+// Route::get('/mobile_app', [FrontendController::class, 'mobileApp'])->name('mobile_app');
+// Route::get('/software_service', [FrontendController::class, 'softwareService'])->name('software_service');
+// Route::get('/web_design', [FrontendController::class, 'webDesign'])->name('web_design');
+// Route::get('/seo', [FrontendController::class, 'seo'])->name('seo');
+// Route::get('/marketing', [FrontendController::class, 'marketing'])->name('marketing');
 
 
-Route::get('/pos', [FrontendController::class, 'pos'])->name('pos');
-Route::get('/misi', [FrontendController::class, 'misi'])->name('misi');
-Route::get('/shob_khobor', [FrontendController::class, 'shobKhobor'])->name('shob_khobor');
-Route::get('/fnf_stay', [FrontendController::class, 'fnfStay'])->name('fnf_stay');
-Route::get('/de_was', [FrontendController::class, 'deWas'])->name('de_was');
-Route::get('/kaan', [FrontendController::class, 'kaan'])->name('kaan');
-Route::get('/book_change', [FrontendController::class, 'bookChange'])->name('book_change');
-Route::get('/foody_moody', [FrontendController::class, 'foodyMoody'])->name('foody_moody');
-Route::get('/ideabd', [FrontendController::class, 'ideaBd'])->name('ideabd');
-
-Route::get('/trusted', [FrontendController::class, 'trusted'])->name('trusted');
-Route::get('/reasonable', [FrontendController::class, 'reasonable'])->name('reasonable');
-Route::get('/twonty_four', [FrontendController::class, 'twonty_four'])->name('twonty_four');
-
-Route::get('/loginfromfrontend', [FrontendController::class, 'login'])->name('loginfromfrontend');
-Route::get('/registrar', [FrontendController::class, 'registrar'])->name('registrar');
+// Route::get('/aeon', [FrontendController::class, 'aeon'])->name('aeon');
+// //Route::get('/projectsingletest', [FrontendController::class, 'projectsingletest_view'])->name('projectsingletest');
+// Route::get('/project_single_view/{project}', [FrontendController::class, 'project_single_view'])->name('project_single_view');
 
 
+// Route::get('/pos', [FrontendController::class, 'pos'])->name('pos');
+// Route::get('/misi', [FrontendController::class, 'misi'])->name('misi');
+// Route::get('/shob_khobor', [FrontendController::class, 'shobKhobor'])->name('shob_khobor');
+// Route::get('/fnf_stay', [FrontendController::class, 'fnfStay'])->name('fnf_stay');
+// Route::get('/de_was', [FrontendController::class, 'deWas'])->name('de_was');
+// Route::get('/kaan', [FrontendController::class, 'kaan'])->name('kaan');
+// Route::get('/book_change', [FrontendController::class, 'bookChange'])->name('book_change');
+// Route::get('/foody_moody', [FrontendController::class, 'foodyMoody'])->name('foody_moody');
+// Route::get('/ideabd', [FrontendController::class, 'ideaBd'])->name('ideabd');
+
+// Route::get('/trusted', [FrontendController::class, 'trusted'])->name('trusted');
+// Route::get('/reasonable', [FrontendController::class, 'reasonable'])->name('reasonable');
+// Route::get('/twonty_four', [FrontendController::class, 'twonty_four'])->name('twonty_four');
+
+// Route::get('/loginfromfrontend', [FrontendController::class, 'login'])->name('loginfromfrontend');
+// Route::get('/registrar', [FrontendController::class, 'registrar'])->name('registrar');
+
+Route::get('/', [AuthenticatedSessionController::class, 'create'])->name('index');
+
+Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
 
 Route::get('/admin', function () {
     return view('admin.index');
