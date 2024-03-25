@@ -72,7 +72,7 @@
                             </li>
 
                             @role('admin')
-                                <li class="nav-item ">
+                                {{-- <li class="nav-item ">
                                     <a href="#" class="nav-link ">
                                         <i class="nav-icon fas fa-tachometer-alt"></i>
                                         <p>
@@ -96,9 +96,9 @@
 
 
                                     </ul>
-                                </li>
+                                </li> --}}
 
-                                <li class="nav-item ">
+                                {{-- <li class="nav-item ">
                                     <a href="#" class="nav-link ">
                                         <i class="nav-icon fas fas fa-fill"></i>
                                         <p>
@@ -122,11 +122,11 @@
 
 
                                     </ul>
-                                </li>
+                                </li> --}}
 
 
 
-                                <li class="nav-item ">
+                                {{-- <li class="nav-item ">
                                     <a href="#" class="nav-link ">
                                         <i class="nav-icon fas fa-question"></i>
                                         <p>
@@ -153,10 +153,10 @@
 
                                     </ul>
 
-                                </li>
+                                </li> --}}
 
 
-                                <li class="nav-item ">
+                                {{-- <li class="nav-item ">
                                     <a href="#" class="nav-link ">
                                         <i class="nav-icon fas fa-envelope"></i>
                                         <p>
@@ -185,11 +185,11 @@
 
                                     </ul>
 
-                                </li>
+                                </li> --}}
 
 
 
-                                <li class="nav-item ">
+                                {{-- <li class="nav-item ">
                                     <a href="#" class="nav-link ">
                                         <i class="nav-icon fas fa-ticket-alt"></i>
                                         <p>
@@ -212,7 +212,7 @@
 
                                     </ul>
 
-                                </li>
+                                </li> --}}
                             @endrole
 
 
@@ -228,8 +228,6 @@
 
                                     </p>
                                 </a>
-
-
 
 
                                 <ul class="nav ">
