@@ -1,9 +1,9 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/" class="brand-link">
-        <img src="{{ asset('dist/img/logo.png') }}" alt="Dream Diver Logo" class="brand-image img-circle elevation-3"
+        <img src="{{ asset('dist/img/logo.png') }}" alt="Support Center Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">Dream Diver</span>
+        <span class="brand-text font-weight-light">Support center</span>
     </a>
 
     <!-- Sidebar -->
@@ -45,10 +45,9 @@
                                     <p>
                                         Hello! {{ Auth::user()->name }}
                                         <i class="right fas fa-angle-left"></i>
-
                                     </p>
                                 </a>
-                                <ul class="nav nav-treeview">
+                                <ul class="nav ">
                                     <li class="nav-item">
                                         <a href="{{ route('profile.edit') }}" class="nav-link ">
                                             <i class="nav-icon fas fa-angle-right"></i>
@@ -71,152 +70,6 @@
                                 </ul>
                             </li>
 
-                            @role('admin')
-                                {{-- <li class="nav-item ">
-                                    <a href="#" class="nav-link ">
-                                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                                        <p>
-                                            Home: Service Section
-                                            <i class="right fas fa-angle-left"></i>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ route('home_service_index') }}" class="nav-link ">
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Home Service All</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{ route('home_service_create') }}" class="nav-link ">
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Home Service Create</p>
-                                            </a>
-                                        </li>
-
-
-                                    </ul>
-                                </li> --}}
-
-                                {{-- <li class="nav-item ">
-                                    <a href="#" class="nav-link ">
-                                        <i class="nav-icon fas fas fa-fill"></i>
-                                        <p>
-                                            Projects
-                                            <i class="right fas fa-angle-left"></i>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ route('projects.index') }}" class="nav-link ">
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Project All</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{ route('projects.create') }}" class="nav-link ">
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Project Create</p>
-                                            </a>
-                                        </li>
-
-
-                                    </ul>
-                                </li> --}}
-
-
-
-                                {{-- <li class="nav-item ">
-                                    <a href="#" class="nav-link ">
-                                        <i class="nav-icon fas fa-question"></i>
-                                        <p>
-                                            FAQ
-                                            <i class="right fas fa-angle-left"></i>
-
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ route('faqs.index') }}" class="nav-link ">
-
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>FAQs All</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{ route('faqs.create') }}" class="nav-link ">
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>FAQ Create</p>
-                                            </a>
-                                        </li>
-
-
-                                    </ul>
-
-                                </li> --}}
-
-
-                                {{-- <li class="nav-item ">
-                                    <a href="#" class="nav-link ">
-                                        <i class="nav-icon fas fa-envelope"></i>
-                                        <p>
-                                            Contact message
-                                            <i class="right fas fa-angle-left"></i>
-
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ route('contact_form_index') }}" class="nav-link ">
-
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Contact message All</p>
-                                            </a>
-                                        </li>
-
-
-                                        <li class="nav-item">
-                                            <a href="{{ route('contact_form_create') }}" class="nav-link ">
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Contact message Create</p>
-                                            </a>
-                                        </li>
-
-
-                                    </ul>
-
-                                </li> --}}
-
-
-
-                                {{-- <li class="nav-item ">
-                                    <a href="#" class="nav-link ">
-                                        <i class="nav-icon fas fa-ticket-alt"></i>
-                                        <p>
-                                            Basic Ticket
-                                            <i class="right fas fa-angle-left"></i>
-
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ route('basicticket_index') }}" class="nav-link ">
-
-                                                <i class="nav-icon fas fa-angle-right"></i>
-                                                <p>Basic Ticket All</p>
-                                            </a>
-                                        </li>
-
-
-
-
-                                    </ul>
-
-                                </li> --}}
-                            @endrole
-
-
-
 
 
                             <li class="nav-item ">
@@ -228,7 +81,6 @@
 
                                     </p>
                                 </a>
-
 
                                 <ul class="nav ">
 
@@ -242,34 +94,25 @@
                                         </li>
                                     @endrole
 
-                                    <li class="nav-item">
-                                        <a href="{{ route('myticket') }}" class="nav-link ">
+                                    @unless (auth()->user()->hasRole('admin'))
+                                        <li class="nav-item">
+                                            <a href="{{ route('myticket') }}" class="nav-link ">
 
-                                            <i class="nav-icon fas fa-angle-right"></i>
-                                            <p>My Ticket</p>
-                                        </a>
-                                    </li>
+                                                <i class="nav-icon fas fa-angle-right"></i>
+                                                <p>My Ticket</p>
+                                            </a>
+                                        </li>
 
-                                    <li class="nav-item">
-                                        <a href="{{ route('tickets.create') }}" class="nav-link ">
-                                            <i class="nav-icon fas fa-angle-right"></i>
-                                            <p>Create a Ticket</p>
-                                        </a>
-                                    </li>
-
-
+                                        <li class="nav-item">
+                                            <a href="{{ route('tickets.create') }}" class="nav-link ">
+                                                <i class="nav-icon fas fa-angle-right"></i>
+                                                <p>Create a Ticket</p>
+                                            </a>
+                                        </li>
+                                    @endunless
                                 </ul>
 
                             </li>
-
-
-
-
-
-
-
-
-
 
                         </ul>
 
