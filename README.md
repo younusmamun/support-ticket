@@ -66,5 +66,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
-# dream-diver-new-website
+
 >>>>>>> 8ffc7f1c2d9892759e83bc0bddc3ec92728d7612
